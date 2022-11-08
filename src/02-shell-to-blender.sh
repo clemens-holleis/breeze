@@ -1,3 +1,7 @@
+version=0.0.1
+date="2022-10-19 22:12:41"
+breeze_info="BREEZE V$version\ndate: $date"
+
 blender_python_script=$(
     cat <<"EOF"
 import uuid
@@ -103,6 +107,7 @@ script_file=$app_data_folder/loading-script.py
 # create files and folders if needed
 [ ! -d "$app_data_folder" ] && mkdir "$app_data_folder"
 [ ! -f "$app_data_folder/blender_exe.txt" ] && echo $blender_default_exe >"$app_data_folder/blender_exe.txt"
+echo $breeze_info >"$app_data_folder/breeze_info.txt"
 
 
 echo $blender_python_script >$script_file
