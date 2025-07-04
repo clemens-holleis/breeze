@@ -1,5 +1,5 @@
-version=0.0.1
-date="2022-10-19 22:12:41"
+version=1.0.0
+date="2025-07-05 01:41:49"
 breeze_info="BREEZE V$version\ndate: $date"
 
 blender_python_script=$(
